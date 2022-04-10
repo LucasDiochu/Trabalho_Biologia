@@ -1,0 +1,433 @@
+﻿<Window x:Class="Trabalho_Biologia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trabalho_Biologia"
+        mc:Ignorable="d"
+        Title="Trabalho" WindowState="Maximized" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TabControl Style="{DynamicResource MahApps.Styles.TabControl.Animated}" Grid.ColumnSpan="2">
+
+            <TabItem Header="Lipídios">
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid  Grid.Row="2">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Image  Height="Auto" Width="Auto" Source="Images/Alimento_1.jfif"  Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_2.jfif"  Grid.Column="1" Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_3.jfif" Grid.Column="2" Grid.Row="2"/>
+
+                    </Grid>
+                    
+                    <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+                        
+                        <Border Margin="0, 10, 90, 0" Background="#ffeaa7" Height="120"  BorderBrush="Black" Width="200" BorderThickness="1">
+                            
+                            <StackPanel >
+                                
+                                <TextBlock FontSize="15" Width="200" Text="Excesso de Lipídios causa:" Margin="3, 0, 20, 0"/>
+                                
+                                <Separator Background="#222f3e" Width="200" Margin="0, 0, 0, 0" />
+                                
+                                <TextBlock  TextElement.Foreground="#222f3e" Height="120" Width="200" Margin="3, 0, 20, 0">
+                                    Obesidade <LineBreak/>
+                                    Colesterol elevado <LineBreak/>
+                                    Complicaçoes cardivasculares <LineBreak/>
+                                    Doenças degenerativas
+                                </TextBlock>
+                            
+                            </StackPanel>
+                        
+                        </Border>
+                        
+                        <Border Margin="0, 10, 90, 0" Height="120" Width="360" Background="#ffeaa7" BorderBrush="Black"  BorderThickness="1">
+                            
+                            <StackPanel Height="120" Width="350" Margin="3, 0, 0, 0" HorizontalAlignment="Center" >
+                                
+                                <TextBlock Margin="3, 0, 0, 0" FontSize="15" Text="O que são lipídios:" />
+                                
+                                <Separator Background="#222f3e" Width="350" />
+                                
+                                <TextBlock FontSize="14" TextElement.Foreground="#222f3e" TextWrapping="WrapWithOverflow" Margin="3, 0, 0, 0" Height="120" Width="350">
+                                    Os lipídios são moléculas orgânicas  formadas a partir da associação entre ácidos 
+                                    graxos e álcool, tais como óleos e gorduras  Eles não são solúveis em água, mas se dissolvem 
+                                    em solventes orgânicos, como a benzina e o éter.
+                                </TextBlock>
+                            
+                            </StackPanel>
+                        
+                        </Border>
+                        
+                        <Border Margin="0, 10, 90, 0" Background="#ffeaa7" BorderBrush="Black"  BorderThickness="1">
+                            
+                            <StackPanel>
+
+                                <TextBlock FontSize="15" Margin="3, 0"  Text="Carencia de Lipídios causa:" />
+                                
+                                <Separator Background="#222f3e"/>
+                                
+                                <TextBlock  TextElement.Foreground="#222f3e" Margin="3, 0" FontSize="14">
+                                    Hipolipidemia <LineBreak/>
+                                    Abetalipoproteinemia<LineBreak/>
+                                    Hipobetalipoproteinemia
+                                </TextBlock>
+                            
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Proteinas">
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid  Grid.Row="2">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Image  Height="Auto" Width="Auto" Source="Images/Alimento_4.jfif"  Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_5.jfif"  Grid.Column="1" Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_6.jfif" Grid.Column="2" Grid.Row="2"/>
+
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+
+                        <Border Margin="0, 10, 90, 0" Height="120" Width="200" Background="#9980FA"  BorderBrush="Black" BorderThickness="1">
+
+                            <StackPanel >
+
+                                <TextBlock FontSize="14" Width="200" Text="Excesso de Proteinas causa:" Margin="4, 0"/>
+
+                                <Separator Background="#222f3e" Width="200" />
+
+                                <TextBlock  TextElement.Foreground="#222f3e" Height="120" Width="200" Margin="4, 0">
+                                     Doenças cardiovasculares <LineBreak/>
+                                     Pedra nos rins <LineBreak/>
+                                     Aumento de peso <LineBreak/>
+                                     Problemas no fígado
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border Margin="0, 10, 90, 0" Height="120" Width="350" Background="#9980FA" BorderBrush="Black"  BorderThickness="1">
+
+                            <StackPanel Height="120" Width="350" Margin="4, 0" HorizontalAlignment="Center" >
+
+                                <TextBlock Margin="4, 0" FontSize="15" Text="O que são Proteinas" />
+
+                                <Separator Background="#222f3e" />
+
+                                <TextBlock FontSize="13" TextElement.Foreground="#222f3e" TextWrapping="WrapWithOverflow" Margin="3, 0, 0, 0" Height="120" Width="350">
+                                    As proteínas são macromoléculas bastante abundantes que são formadas por aminoácidos unidos por ligações peptídicas. 
+                                    As proteínas são compostos orgânicos abundantes encontrados em todos os organismos.
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border Margin="0, 10, 90, 0" Height="120" Width="350" Background="#9980FA" BorderBrush="Black"  BorderThickness="1">
+
+                            <StackPanel>
+
+                                <TextBlock FontSize="15" Margin="3, 0"  Text="Carencia de Proteinas causa:" />
+
+                                <Separator Background="#222f3e"/>
+
+                                <TextBlock  TextElement.Foreground="#222f3e" Margin="4, 0" FontSize="14">
+                                    Esgotamento físico <LineBreak/>
+                                    Esgotamento mental <LineBreak/>
+                                    Flacidez muscular <LineBreak/>
+                                    Esgotamento físico e mental <LineBreak/>
+                                    Queda de cabelos e unhas fracas <LineBreak/>
+                                    Pele sem viço <LineBreak/>
+                                    Cicatrização lenta <LineBreak/>
+                                    Inchaço corporal <LineBreak/>
+                                </TextBlock>
+
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Vitaminas">
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition  />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid  Grid.Row="2">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Image  Height="Auto" Width="Auto" Source="Images/Alimento_9.jfif"  Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_8.jfif"  Grid.Column="1" Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_7.jfif" Grid.Column="2" Grid.Row="2"/>
+
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+
+                        <Border Margin="0, 10, 90, 0" Height="140" Width="210" Background="#f39c12"  BorderBrush="Black" BorderThickness="1">
+
+                            <StackPanel>
+
+                                <TextBlock FontSize="15" Width="200" Text="Excesso de Vitaminas causa:" Margin="4, 0"/>
+
+                                <Separator Background="#222f3e" Width="200"/>
+
+                                <TextBlock  TextElement.Foreground="#222f3e" FontSize="12" Margin="4, 0" >
+                                    A: Pele seca áspera e descamativa, <LineBreak/> 
+                                    dores de cabeça, tonturas <LineBreak/>
+                                    D: hipercalcemia, pressão alta, <LineBreak/> 
+                                    perda de apetite <LineBreak/>
+                                    C: cólicas estomacais, diarreia, <LineBreak/>
+                                    cálculos renais 
+                                
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border Margin="0, 10, 90, 0" Height="120" Width="350" Background="#a29bfe" BorderBrush="Black"  BorderThickness="1">
+
+                            <StackPanel Height="120" Width="350" Margin="3, 0, 0, 0" HorizontalAlignment="Center" >
+
+                                <TextBlock Margin="4, 0" FontSize="15" Text="O que são Vitaminas:" />
+                                <Separator Background="#222f3e" />
+                                <TextBlock FontSize="12" TextElement.Foreground="#222f3e" TextWrapping="WrapWithOverflow" Margin="4, 0">
+                                    As vitaminas são substâncias orgânicas que o corpo necessita em pequenas quantidades, 
+                                    que são indispensáveis ao funcionamento do organismo, 
+                                    já que são essenciais para manter o sistema imunológico saudável, 
+                                    garantir o funcionamento correto do metabolismo e promover o crescimento.
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border Margin="0, 10, 90, 0" Height="130" Width="300" Background="#ff7675" BorderBrush="Black"  BorderThickness="1">
+
+                            <StackPanel>
+
+                                <TextBlock FontSize="15" Margin="4, 0"  Text="Carencia de Vitaminas causa:" />
+
+                                <Separator Background="#222f3e"/>
+
+                                <TextBlock  TextElement.Foreground="#222f3e" Margin="4, 0" FontSize="12">
+                                    Raquitismos (vitamina D),
+                                    Beribéri (Vitamina B1), <LineBreak/>
+                                    Pelagra (vitamina B3),
+                                    Anemia (vitamina B12) <LineBreak/>
+                                    Ariboflavinose (vitamina B2) <LineBreak/>
+                                    Xeroftalmia,
+                                    Nictalopia <LineBreak/>
+                                    Hemeralopia (todas relacionadas a vitamina A)
+                                </TextBlock>
+
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Carboidratos">
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    
+                    <Grid  Grid.Row="2">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Image  Height="Auto" Width="Auto" Source="Images/Alimento_10.jfif"  Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_11.jfif"  Grid.Column="1" Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_12.jfif" Grid.Column="2" Grid.Row="2"/>
+
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+
+                        <Border Margin="0, 10, 90, 0" Height="140" Width="210" Background="#fad390"  BorderBrush="Black" BorderThickness="1">
+
+                            <StackPanel>
+
+                                <TextBlock FontSize="14" Width="200" Text="Excesso de Carboidratos causa:" Margin="4, 0"/>
+
+                                <Separator Background="#222f3e" Width="200"/>
+
+                                <TextBlock  TextElement.Foreground="#222f3e" FontSize="12" Margin="4, 0" >
+                                    Doenças cardiovasculares <LineBreak/>
+                                    Doenças gastrointestinais <LineBreak/>
+                                    Diabetes <LineBreak/>
+                                    Resistencia à insulina <LineBreak/>
+                                    Obesidade
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border Margin="0, 10, 90, 0" Height="120" Width="350" Background="#fad390" BorderBrush="Black"  BorderThickness="1">
+
+                            <StackPanel Height="120" Width="350" Margin="3, 0, 0, 0" HorizontalAlignment="Center" >
+
+                                <TextBlock Margin="4, 0" FontSize="15" Text="O que são Carboidratos:" />
+                                <Separator Background="#222f3e" />
+                                <TextBlock FontSize="12" TextElement.Foreground="#222f3e" TextWrapping="WrapWithOverflow" Margin="4, 0">
+                                    O carboidrato é um macronutriente muito importante para o organismo, pois sua principal função é proporcionar energia para realizarmos as atividades do dia a dia.
+                                    Portanto, ele funciona como um combustível para o corpo.
+                                    Muitos alimentos contêm hidratos de carbono, mesmo as verduras e legumes
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border Margin="0, 10, 90, 0" Height="130" Width="300" Background="#fad390" BorderBrush="Black"  BorderThickness="1">
+
+                            <StackPanel>
+
+                                <TextBlock FontSize="14" Margin="4, 0"  Text="Carencia de Carboidratos causa:" />
+
+                                <Separator Background="#222f3e"/>
+
+                                <TextBlock  TextElement.Foreground="#222f3e" Margin="4, 0" FontSize="12">
+                                    Enfraquecimento do sistema imunológico <LineBreak/>
+                                </TextBlock>
+
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Sais Minerais">
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid  Grid.Row="2">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Image  Height="Auto" Width="Auto" Source="Images/Alimento_13.jfif"  Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_14.jfif"  Grid.Column="1" Grid.Row="2" />
+
+                        <Image  Height="Auto" Width="Auto"  Source="Images/Alimento_15.jfif" Grid.Column="2" Grid.Row="2"/>
+
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+
+                        <Border Margin="0, 10, 90, 0" Height="140" Width="210" Background="#7efff5"  BorderBrush="Black" BorderThickness="1">
+
+                            <StackPanel>
+
+                                <TextBlock FontSize="14" Width="200" Text="Excesso de Sais Minerais causa:" Margin="4, 0"/>
+
+                                <Separator Background="#222f3e" Width="200"/>
+
+                                <TextBlock  TextElement.Foreground="#222f3e" FontSize="12" Margin="4, 0" >
+                                    Pressão Alta <LineBreak/>
+                                    Bócio <LineBreak/>
+                                    Anemia
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border Margin="0, 10, 90, 0" Height="120" Width="350" Background="#7efff5" BorderBrush="Black"  BorderThickness="1">
+
+                            <StackPanel Height="120" Width="350" Margin="3, 0, 0, 0" HorizontalAlignment="Center" >
+
+                                <TextBlock Margin="4, 0" FontSize="15" Text="O que são Sais Minerais:" />
+                                <Separator Background="#222f3e" />
+                                <TextBlock FontSize="12" TextElement.Foreground="#222f3e" TextWrapping="WrapWithOverflow" Margin="4, 0">
+                                    Os sais minerais são importantes elementos inorgânicos que atuam nas mais variadas atividades do nosso organismo. 
+                                    Os sais minerais são elementos inorgânicos necessários para o funcionamento adequado do organismo, 
+                                    atuando, por exemplo, na constituição de ossos, contração muscular e propagação do impulso nervoso.
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border Margin="0, 10, 90, 0" Height="130" Width="300" Background="#7efff5" BorderBrush="Black"  BorderThickness="1">
+
+                            <StackPanel>
+
+                                <TextBlock FontSize="14" Margin="4, 0"  Text="Carencia de Sais Minerais causa:" />
+
+                                <Separator Background="#222f3e"/>
+
+                                <TextBlock  TextElement.Foreground="#222f3e" Margin="4, 0" FontSize="12">
+                                    doenças circulatórias <LineBreak/>
+                                    doenças ósseas <LineBreak/>
+                                    arteriosclerose <LineBreak/>
+                                    diabetes <LineBreak/>
+                                    gastrite <LineBreak/>
+                                    prisão de ventre
+                                </TextBlock>
+
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
